@@ -75,11 +75,11 @@ Crie a imagem Docker:
 
 Execute o container Docker:
 
-docker run -p 8080:8080 virtual-filesystem-backend
+    docker run -p 8080:8080 virtual-filesystem-backend
 
 A API estará disponível em http://localhost:8080/api.
 
-#Frontend com Docker
+# Frontend com Docker
 
 Navegue até a pasta do frontend:
 
