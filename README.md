@@ -57,7 +57,7 @@ Instale as dependências:
 
 Execute o frontend:
 
-ng serve
+    ng serve
 
 O frontend estará disponível em http://localhost:4200.
 
