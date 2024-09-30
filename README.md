@@ -1,4 +1,4 @@
-# sistema-arquivos-virtual
+
 
 # Sistema de Arquivos Virtual
 
@@ -27,7 +27,7 @@ Docker (opcional)
 
 # Instruções para Rodar o Projeto
 
-#Backend:
+# Backend:
 
 Clone o repositório:
 
@@ -45,7 +45,7 @@ Clone o repositório:
 
 A API estará disponível em http://localhost:8080/api.
 
-#Frontend
+# Frontend
 
 Navegue até a pasta do frontend:
 
