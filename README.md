@@ -1,10 +1,10 @@
 # sistema-arquivos-virtual
 
-Sistema de Arquivos Virtual
+#Sistema de Arquivos Virtual
 
 Este projeto implementa um sistema de arquivos virtual que permite criar, listar, atualizar e deletar diretórios e arquivos de forma hierárquica. O backend é desenvolvido com Spring Boot e o frontend com Angular.
 
-Funcionalidades
+#Funcionalidades
 
 API REST para operações CRUD em diretórios e arquivos.
 
@@ -13,8 +13,8 @@ Exibição de uma listagem hierárquica de diretórios no frontend.
 Suporte a Docker para facilitar a execução do projeto.
 
 
-Requisitos
-Antes de iniciar, você precisa ter instalado:
+#Requisitos
+  Antes de iniciar, você precisa ter instalado:
 
 Java 17
 
@@ -25,17 +25,17 @@ Angular CLI
 Docker (opcional)
 
 
-Instruções para Rodar o Projeto
+#Instruções para Rodar o Projeto
 
-Backend:
+#Backend:
 
 Clone o repositório:
 
-git clone https://github.com/lari-sant/sistema-arquivos-virtual.git
+    git clone https://github.com/lari-sant/sistema-arquivos-virtual.git
 
-cd sistema-arquivos-virtual/backend
+    cd sistema-arquivos-virtual/backend
 
-Compile o projeto:
+#Compile o projeto:
 
 ./mvnw clean install
 
