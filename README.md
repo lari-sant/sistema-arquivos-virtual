@@ -1,10 +1,10 @@
 # sistema-arquivos-virtual
 
-#Sistema de Arquivos Virtual
+# Sistema de Arquivos Virtual
 
 Este projeto implementa um sistema de arquivos virtual que permite criar, listar, atualizar e deletar diretórios e arquivos de forma hierárquica. O backend é desenvolvido com Spring Boot e o frontend com Angular.
 
-#Funcionalidades
+# Funcionalidades
 
 API REST para operações CRUD em diretórios e arquivos.
 
@@ -13,7 +13,7 @@ Exibição de uma listagem hierárquica de diretórios no frontend.
 Suporte a Docker para facilitar a execução do projeto.
 
 
-#Requisitos
+# Requisitos
   Antes de iniciar, você precisa ter instalado:
 
 Java 17
@@ -25,7 +25,7 @@ Angular CLI
 Docker (opcional)
 
 
-#Instruções para Rodar o Projeto
+# Instruções para Rodar o Projeto
 
 #Backend:
 
@@ -35,25 +35,25 @@ Clone o repositório:
 
     cd sistema-arquivos-virtual/backend
 
-#Compile o projeto:
+# Compile o projeto:
 
-./mvnw clean install
+    ./mvnw clean install
 
-Execute o projeto:
+# Execute o projeto:
 
-./mvnw spring-boot:run
+    ./mvnw spring-boot:run
 
 A API estará disponível em http://localhost:8080/api.
 
-Frontend
+#Frontend
 
 Navegue até a pasta do frontend:
 
-cd ../frontend
+    cd ../frontend
 
 Instale as dependências:
 
-npm install
+    npm install
 
 Execute o frontend:
 
@@ -61,17 +61,17 @@ ng serve
 
 O frontend estará disponível em http://localhost:4200.
 
-Utilizando Docker
+# Utilizando Docker
 
 Backend com Docker
 
 Navegue até a pasta do backend:
 
-cd backend
+    cd backend
 
 Crie a imagem Docker:
 
-docker build -t virtual-filesystem-backend .
+    docker build -t virtual-filesystem-backend .
 
 Execute o container Docker:
 
@@ -79,49 +79,50 @@ docker run -p 8080:8080 virtual-filesystem-backend
 
 A API estará disponível em http://localhost:8080/api.
 
-Frontend com Docker
+#Frontend com Docker
 
 Navegue até a pasta do frontend:
 
-cd ../frontend
+    cd ../frontend
 
-Crie a imagem Docker:
+# Crie a imagem Docker:
 
-docker build -t virtual-filesystem-frontend .
+    docker build -t virtual-filesystem-frontend .
 
 Execute o container Docker:
 
-docker run -p 4200:8080 virtual-filesystem-frontend
+    docker run -p 4200:8080 virtual-filesystem-frontend
 
 O frontend estará disponível em http://localhost:4200.
 
-Testes Unitários (Backend)
+# Testes Unitários (Backend)
 
 Para rodar os testes unitários no backend, execute:
 
-./mvnw test
+    ./mvnw test
 
-Estrutura do Projeto
+# Estrutura do Projeto
 
-backend/: Contém o código do Spring Boot.
+  backend/: Contém o código do Spring Boot.
 
-frontend/: Contém o código do Angular.
+  frontend/: Contém o código do Angular.
 
-docker/: Arquivos relacionados à configuração Docker.
+  docker/: Arquivos relacionados à configuração Docker.
 
-Documentação da API
+
+# Documentação da API
 
 A API REST suporta as seguintes operações:
 
-GET /api/directories: Retorna a listagem de todos os diretórios.
+  GET /api/directories: Retorna a listagem de todos os diretórios.
 
-GET /api/directories/{id}: Retorna um diretório específico por ID.
+  GET /api/directories/{id}: Retorna um diretório específico por ID.
 
-POST /api/directories: Cria um novo diretório.
+  POST /api/directories: Cria um novo diretório.
 
-PUT /api/directories/{id}: Atualiza um diretório existente.
+  PUT /api/directories/{id}: Atualiza um diretório existente.
 
-DELETE /api/directories/{id}: Remove um diretório.
+  DELETE /api/directories/{id}: Remove um diretório.
 
 
 
