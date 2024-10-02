@@ -22,7 +22,7 @@ Node.js (Versão 16 ou superior)
 
 Angular CLI
 
-Docker (opcional)
+Docker 
 
 
 # Instruções para Rodar o Projeto
@@ -33,7 +33,7 @@ Clone o repositório:
 
     git clone https://github.com/lari-sant/sistema-arquivos-virtual.git
 
-    cd sistema-arquivos-virtual/backend
+    cd  virtualfilesystem-backend
 
 # Compile o projeto:
 
@@ -49,7 +49,7 @@ A API estará disponível em http://localhost:8080/api.
 
 Navegue até a pasta do frontend:
 
-    cd ../frontend
+    cd virtualfilesystem-frontend
 
 Instale as dependências:
 
@@ -63,35 +63,21 @@ O frontend estará disponível em http://localhost:4200.
 
 # Utilizando Docker
 
-Backend com Docker
+# Backend com Docker
+Construir e Executar o Backend:
 
-Navegue até a pasta do backend:
-
-    cd backend
-
-Crie a imagem Docker:
-
-    docker build -t virtual-filesystem-backend .
-
-Execute o container Docker:
-
-    docker run -p 8080:8080 virtual-filesystem-backend
+    cd virtualfilesystem-backend
+    docker build -t virtualfilesystem-backend .
+    docker run -p 8080:8080 virtualfilesystem-backend
 
 A API estará disponível em http://localhost:8080/api.
 
 # Frontend com Docker
+Construir e Executar o Frontend:
 
-Navegue até a pasta do frontend:
-
-    cd ../frontend
-
-# Crie a imagem Docker:
-
-    docker build -t virtual-filesystem-frontend .
-
-Execute o container Docker:
-
-    docker run -p 4200:8080 virtual-filesystem-frontend
+    cd virtualfilesystem-frontend
+    docker build -t virtualfilesystem-frontend .
+    docker run -p 4200:80 virtualfilesystem-frontend
 
 O frontend estará disponível em http://localhost:4200.
 
@@ -107,7 +93,7 @@ Para rodar os testes unitários no backend, execute:
 
   frontend/: Contém o código do Angular.
 
-  docker/: Arquivos relacionados à configuração Docker.
+  docker: Arquivos relacionados à configuração Docker.
 
 
 # Documentação da API
