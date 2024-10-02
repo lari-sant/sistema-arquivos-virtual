@@ -1,0 +1,17 @@
+
+<div class="directory-container">
+  <ul>
+    <li *ngFor="let dir of directories">
+      {{ dir.name }}
+      <app-sub-directory [parentDir]="dir"></app-sub-directory>
+    </li>
+  </ul>
+</div>
+
+<ul *ngIf="parentDir.children && parentDir.children.length">
+  <li *ngFor="let child of parentDir.children">
+    {{ child.name }}
+    <app-sub-directory [parentDir]="child"></app-sub-directory>
+  </li>
+</ul>
+
