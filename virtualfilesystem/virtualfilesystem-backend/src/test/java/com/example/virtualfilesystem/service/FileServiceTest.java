@@ -1,3 +1,6 @@
+package com.example.virtualfilesystem.service;
+import com.example.virtualfilesystem.entity.FileEntity;
+import com.example.virtualfilesystem.repository.FileRepository;
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
