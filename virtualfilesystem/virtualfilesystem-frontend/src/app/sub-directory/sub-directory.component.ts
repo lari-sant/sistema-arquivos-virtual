@@ -1,4 +1,4 @@
-// src/app/sub-directory/sub-directory.component.ts
+
 import { Component, Input } from '@angular/core';
 import { Directory } from '../services/directory.service';
 

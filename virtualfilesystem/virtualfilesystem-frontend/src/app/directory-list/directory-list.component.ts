@@ -1,4 +1,4 @@
-// src/app/directory-list/directory-list.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { DirectoryService, Directory } from '../services/directory.service';
 
